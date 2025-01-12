@@ -1,3 +1,9 @@
+FEATHURES:
+
+visible fps, working gui, label creator, gui creator, sound, color, etc..
+
+HOW TO:
+
 to use you must have installed python.
 when python installed use this command in cmd bar:
 
