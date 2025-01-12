@@ -1,0 +1,61 @@
+to use you must have installed python.
+when python installed use this command in cmd bar:
+
+pip install keyboard
+pip install colorama
+pip install pygame
+
+you dont need to run the script but you must have the script on the same folder with your script that you will be using for usage.
+
+HELPER:
+
+# USE THIS TO MAKE IT WORK
+import tinygui
+# USE THIS TO MAKE IT WORK
+
+# CREATE GUI
+GUI_WIDTH = 237
+GUI_HEIGHT = 60
+fps_limit = 60
+gui = tinygui.Main("GUI", GUI_WIDTH, GUI_HEIGHT, fps_limit)
+# CREATE GUI
+
+# CREATE LABEL
+Label = tinygui.Label(YOUR_GUI, LABEL_TEXT, LABEL_X, LABEL_Y, LABEL_COLOR)
+# CREATE LABEL
+
+# COLOR
+tinygui.Fore.COLOR
+# COLOR
+
+# EDIT LABEL
+Label.Edit(YOUR_GUI, EDITED_TEXT, EDITED_X, EDITED_Y, EDITED_COLOR)
+# EDIT LABEL
+
+# CHECK COLLISION
+if gui.collidedwith(Label1.index, Label2.index):
+  pass
+# CHECK COLLISION
+
+# LOOP
+running = True
+while running:
+  for key in tinygui.GetPressedKeys():
+        if key == clicker.EXIT:
+            running = False
+  gui.update()
+gui.delete()
+# LOOP
+
+# GET PRESSED KEYS AND CHECK IF KEY PRESSED
+for key in tinygui.GetPressedKeys():
+  print(key)
+
+if tinygui.Is_Pressed(Key):
+  pass
+# GET PRESSED KEYS AND CHECK IF KEY PRESSED
+
+# SOUND
+Sound = tinygui.Sound(LOCATION_OF_SOUND)
+tinygui.PlaySound(Sound)
+# SOUND
