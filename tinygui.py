@@ -22,10 +22,10 @@ class Label:
     def Edit(self, GUI, text: str, x: int, y: int, color = Fore.WHITE):
         if GUI.deleted:
             return
-        if text == None:    text = GUI.UIS[self.index][0]
-        if x == None:   x = GUI.UIS[self.index][1]
-        if y == None:    y = GUI.UIS[self.index][2]
-        if color == None:   color = GUI.UIS[self.index][3]
+        if not text:    text = GUI.UIS[self.index][0]
+        if not x:   x = GUI.UIS[self.index][1]
+        if not y:    y = GUI.UIS[self.index][2]
+        if not color:   color = GUI.UIS[self.index][3]
         GUI.UIS[self.index][0] = text
         GUI.UIS[self.index][1] = x
         GUI.UIS[self.index][2] = y
