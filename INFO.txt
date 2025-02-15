@@ -47,7 +47,7 @@ if gui.collidedwith(Label1.index, Label2.index):
 running = True
 while running:
   for key in tinygui.GetPressedKeys():
-        if key == clicker.EXIT:
+        if key == tinygui.EXIT:
             running = False
   gui.update()
 gui.delete()
